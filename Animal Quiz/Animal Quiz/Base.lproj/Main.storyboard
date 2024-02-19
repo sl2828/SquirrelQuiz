@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animal_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zsS-Ke-vwU">
+                                <rect key="frame" x="96.666666666666686" y="175.66666666666663" width="200" height="501"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIB-62-WrS">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="23.333333333333332"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Question">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="20" name="ComicSansMS-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="output-onlinepngtools (1)" translatesAutoresizingMaskIntoConstraints="NO" id="dwx-KU-XWx">
+                                        <rect key="frame" x="0.0" y="43.333333333333343" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="jex-eh-gEX"/>
+                                            <constraint firstAttribute="width" constant="200" id="v4t-qc-71n"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WkJ-ma-2bU">
+                                        <rect key="frame" x="0.0" y="263.33333333333337" width="200" height="34.333333333333314"/>
+                                        <color key="tintColor" red="1" green="0.7199927739209564" blue="0.93722327288760221" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <connections>
+                                            <action selector="optionA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tdv-GA-eOJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29L-xk-jfI">
+                                        <rect key="frame" x="0.0" y="317.66666666666663" width="200" height="34.333333333333314"/>
+                                        <color key="tintColor" red="1" green="0.71999277390000005" blue="0.93722327289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Squirrel"/>
+                                        <connections>
+                                            <action selector="optionB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wIr-SR-61g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5KX-6V-6vY">
+                                        <rect key="frame" x="0.0" y="372" width="200" height="34.333333333333314"/>
+                                        <color key="tintColor" red="1" green="0.71999277390000005" blue="0.93722327289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Raccoon"/>
+                                        <connections>
+                                            <action selector="optionC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i49-bY-ldD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdS-Lv-AGq">
+                                        <rect key="frame" x="0.0" y="426.33333333333337" width="200" height="34.333333333333314"/>
+                                        <color key="tintColor" red="1" green="0.71999277390000005" blue="0.93722327289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Rabbit"/>
+                                        <connections>
+                                            <action selector="optionD:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I4Q-ny-iG1"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWd-eW-qlo">
+                                        <rect key="frame" x="0.0" y="480.66666666666674" width="200" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.66165721026692215" green="0.6732776545989525" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.76990262060736647" green="0.62889403756935369" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="zsS-Ke-vwU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qz5-KY-I0E"/>
+                            <constraint firstItem="zsS-Ke-vwU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WYS-ct-lpT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="correctness" destination="eWd-eW-qlo" id="60Z-H6-AMS"/>
+                        <outlet property="picture" destination="dwx-KU-XWx" id="4fV-BK-QuT"/>
+                        <outlet property="question" destination="yIB-62-WrS" id="JHu-qf-jNa"/>
+                        <outlet property="textA" destination="WkJ-ma-2bU" id="Tv3-L2-sh6"/>
+                        <outlet property="textB" destination="29L-xk-jfI" id="OGK-kA-Y93"/>
+                        <outlet property="textC" destination="5KX-6V-6vY" id="VMY-co-Ohz"/>
+                        <outlet property="textD" destination="JdS-Lv-AGq" id="7Ob-gl-HjT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.717557251908396" y="-28.87323943661972"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="output-onlinepngtools (1)" width="1024" height="1024"/>
+    </resources>
+</document>
